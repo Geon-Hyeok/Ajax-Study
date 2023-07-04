@@ -48,6 +48,8 @@
 			xhr = new XMLHttpRequest();
 
 			// 2.XMLHttpRequest 객체의 준비상태(ReadyState)가 변경될 경우 호출될 이벤트 처리 함수 등록
+			// XMLHttpRequest.onreadystatechange : XMLHttpRequest 객체의 준비상태가 변경되는
+			// 이벤트에 대한 이벤트 리스너 속성(프로퍼티)
 			// XMLHttpRequest.readyState : XMLHttpRequest 객체의 준비상태 정보를 저장한 프로퍼티
 			// => XMLHttpRequest 객체의 준비상태 순차적으로 자동 변경
 			// => 0 : XMLHttpRequest 객체 생성, 1 : open() 메소드 호출 - 웹프로그램 요청 설정 
