@@ -14,7 +14,7 @@
 	<h1>jQuery AJAX</h1>
 	<hr>
 	<h2>
-		음원차트(<span id="now"></span> 현재 기준)
+		음원챠트(<span id="now"></span> 현재 기준)
 	</h2>
 	<div id="songList"></div>
 
@@ -26,7 +26,8 @@
 			success : function(obj) {
 				//alert(obj);//[object Object]
 
-				$("#now").html(obj.now);
+				//$("#now").html(obj.now);
+				$("#now").html(obj["now"]);
 
 				var html = "<ol>";
 				$(obj.songs).each(
